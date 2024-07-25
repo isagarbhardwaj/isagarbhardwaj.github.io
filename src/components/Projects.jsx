@@ -19,7 +19,7 @@ const Projects = () => {
                 initial={{x: -100, opacity: 0}} 
                 transition={{duration: 1}} 
                 className="w-full lg:w-1/4">
-                <img src={project.image} alt={project.title} height={150} width={150} className="mb-6 rounded"/>
+                <img src={project.image} alt={project.title} height={250} width={300} className="mb-6 rounded"/>
               </motion.div>
               <motion.div 
                 whileInView={{x: 0, opacity: 1}} 
@@ -31,6 +31,7 @@ const Projects = () => {
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
                 ))}
+                <p className="mt-4"><a href={project.demo} target="_blank"><span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 hover:text-white">Live Demo</span></a></p>
               </motion.div>
             </div>
         ))}</div>
