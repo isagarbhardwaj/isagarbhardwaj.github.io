@@ -1,12 +1,14 @@
-import { RiReactjsLine } from "react-icons/ri"
-import { TbBrandJavascript } from "react-icons/tb"
-import { TbBrandGraphql } from "react-icons/tb"
-import { SiMagento } from "react-icons/si"
-import { SiMysql } from "react-icons/si"
-import { DiPhp } from "react-icons/di"
-import { TbBrandTailwind } from "react-icons/tb"
-import { FaLess } from "react-icons/fa6";
 import { motion } from "framer-motion"
+import { FaGithub } from "react-icons/fa";
+import { FaBitbucket } from "react-icons/fa";
+import { TbBrandVscode } from "react-icons/tb";
+import { SiSublimetext } from "react-icons/si";
+import { SiMacos } from "react-icons/si";
+import { FcLinux } from "react-icons/fc";
+import { SiZendesk } from "react-icons/si";
+import { FaWindows } from "react-icons/fa6";
+import { FaGitlab } from "react-icons/fa";
+import { IoTerminal } from "react-icons/io5";
 
 const iconVariants = (duration) => ({
     initial: {y: -10},
@@ -20,7 +22,8 @@ const iconVariants = (duration) => ({
         }
     }
 })
-const Technologies = () => {
+
+const Tools = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
         <motion.h2 
@@ -28,16 +31,16 @@ const Technologies = () => {
             initial={{y: -100, opacity: 0}} 
             transition={{duration: 1.5}}
             className="my-20 text-center text-4xl">
-            Technologies
+            Tools | Project Mgmt | OS
         </motion.h2>
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div  className="flex flex-wrap items-center justify-center gap-4">
             <motion.div 
                 whileHover={{ scale: 1.2 }}
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiPhp className="text-7xl text-white-400" />
+                <TbBrandVscode className="text-7xl text-sky-600" />
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.2 }}
@@ -45,31 +48,15 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiMagento className="text-7xl text-orange-600" />
+                <SiSublimetext className="text-7xl text-orange-400" />
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.2 }}
-                variants={iconVariants(5)}
+                variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandJavascript className="text-7xl text-yellow-600" />
-            </motion.div>
-            <motion.div 
-                whileHover={{ scale: 1.2 }}
-                variants={iconVariants(2)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiReactjsLine className="text-7xl text-cyan-400" />
-            </motion.div>
-            <motion.div 
-                whileHover={{ scale: 1.2 }}
-                variants={iconVariants(3)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaLess className="text-7xl text-teal-800" />
+                <IoTerminal className="text-7xl text-white" />
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.2 }}
@@ -77,7 +64,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandTailwind className="text-7xl text-sky-700" />
+                <SiZendesk className="text-7xl text-green-900" />
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.2 }}
@@ -85,7 +72,31 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiMysql className="text-7xl text-white-400" />
+                <FaGithub className="text-7xl text-purple-400" />
+            </motion.div>
+            <motion.div 
+                whileHover={{ scale: 1.2 }}
+                variants={iconVariants(5)}
+                initial="initial"
+                animate="animate"
+                className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaBitbucket className="text-7xl text-sky-500" />
+            </motion.div>
+            <motion.div 
+                whileHover={{ scale: 1.2 }}
+                variants={iconVariants(2)}
+                initial="initial"
+                animate="animate"
+                className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaGitlab className="text-7xl text-orange-600" />
+            </motion.div>
+            <motion.div 
+                whileHover={{ scale: 1.2 }}
+                variants={iconVariants(4)}
+                initial="initial"
+                animate="animate"
+                className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiMacos className="text-7xl text-white-400" />
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.2 }}
@@ -93,11 +104,19 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandGraphql className="text-7xl text-pink-600" />
+                <FcLinux className="text-7xl text-white-400" />
+            </motion.div>
+            <motion.div 
+                whileHover={{ scale: 1.2 }}
+                variants={iconVariants(3)}
+                initial="initial"
+                animate="animate"
+                className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaWindows className="text-7xl text-sky-400" />
             </motion.div>
         </div>
     </div>
   )
 }
 
-export default Technologies
+export default Tools
