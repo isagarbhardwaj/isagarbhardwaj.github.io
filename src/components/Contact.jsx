@@ -1,6 +1,8 @@
 import { CONTACT } from "../constants"
 import { motion } from "framer-motion"
 
+const callTo = "tel:";
+const mailtTo = "mailto:";
 const Contact = () => {
   return (
     <div className="border-b border-neutral-900 pb-20">
@@ -24,9 +26,12 @@ const Contact = () => {
                 initial={{x: 100, opacity: 0}} 
                 transition={{duration: 1}} 
                 className="my-4">
-                {CONTACT.phoneNo}
+                <a href={callTo+CONTACT.phoneNo} >
+                    {CONTACT.phoneNo}
+                </a>
             </motion.p>
-            <a href="" className="border-b">{CONTACT.email}</a>
+            <a href={mailtTo+CONTACT.email} className="border-b">{CONTACT.email}</a>
+            <p className="mt-4">CodePsyc © 2024</p>
         </div>
     </div>
   )
