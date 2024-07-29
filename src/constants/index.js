@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
+import project3 from "../assets/projects/project-3.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack Adobe Commerce developer with a knack for crafting robust and scalable e-commerce web applications. With 6 years of hands-on experience, I have honed my skills in Adobe Commerce aka Magento2, PHP, JavaScript, jQuery, MySQL, AJAX, JSON and Web API. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -71,6 +72,13 @@ export const PROJECTS = [
     description: "A basic text to speech converter app, that you can use to listen long paragraphs which you do not want to read.",
     technologies: ["React", "Javascript", "DOM"],
     demo: "https://codepsyc-text-to-speech.vercel.app",
+  },
+  {
+    title: "ToDo List",
+    image: project3,
+    description: "A basic ToDo List app that helps you to add tasks, edit and delete them when done.",
+    technologies: ["React", "Tailwind CSS",],
+    demo: "https://codepsyc-to-do-list.vercel.app",
   },
 ];
 
