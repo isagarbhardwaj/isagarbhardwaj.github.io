@@ -65,6 +65,7 @@ export const PROJECTS = [
     description: "A single page, basic but transitional and fully responsive portfolio created with React and Tailwind.",
     technologies: ["React", "Tailwind CSS"],
     demo: "https://isagarbhardwaj.vercel.app",
+    github: "https://github.com/isagarbhardwaj/isagarbhardwaj.github.io",
   },
   {
     title: "Text to Speech",
@@ -72,6 +73,7 @@ export const PROJECTS = [
     description: "A basic text to speech converter app, that you can use to listen long paragraphs which you do not want to read.",
     technologies: ["React", "Javascript", "DOM"],
     demo: "https://codepsyc-text-to-speech.vercel.app",
+    github: "https://github.com/isagarbhardwaj/text-to-speech",
   },
   {
     title: "ToDo List",
@@ -79,6 +81,7 @@ export const PROJECTS = [
     description: "A basic ToDo List app that helps you to add tasks, edit and delete them when done.",
     technologies: ["React", "Tailwind CSS",],
     demo: "https://codepsyc-to-do-list.vercel.app",
+    github: "https://github.com/isagarbhardwaj/to-do-app",
   },
 ];
 
