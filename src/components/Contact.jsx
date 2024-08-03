@@ -1,5 +1,6 @@
 import { CONTACT } from "../constants"
 import { motion } from "framer-motion"
+import updatedCV from "../assets/Updated_CV.pdf";
 
 const callTo = "tel:";
 const mailtTo = "mailto:";
@@ -31,6 +32,13 @@ const Contact = () => {
                 </a>
             </motion.p>
             <a href={mailtTo+CONTACT.email} className="border-b">{CONTACT.email}</a>
+            <p className="mt-4">
+            <a href={updatedCV} target="_blank">
+                <span className="mt-4 rounded bg-neutral-900 px-2 py-1 text-xl font-medium text-purple-800 hover:text-white">
+                    <button className="">Download Resume</button>
+                </span>
+            </a>
+            </p>
             <p className="mt-4">CodePsyc © 2024</p>
         </div>
     </div>
