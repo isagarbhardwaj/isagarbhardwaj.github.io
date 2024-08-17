@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
+import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack Adobe Commerce developer with a knack for crafting robust and scalable e-commerce web applications. With 6 years of hands-on experience, I have honed my skills in Adobe Commerce aka Magento2, PHP, JavaScript, jQuery, MySQL, AJAX, JSON and Web API. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -82,6 +83,14 @@ export const PROJECTS = [
     technologies: ["React", "Tailwind CSS",],
     demo: "https://codepsyc-to-do-list.vercel.app",
     github: "https://github.com/isagarbhardwaj/to-do-app",
+  },
+  {
+    title: "Daily News",
+    image: project4,
+    description: "A Single page Daily News application showing news using an API (newsdata.io).",
+    technologies: ["React", "Tailwind CSS", "REST API"],
+    demo: "https://codepsyc-daily-news.vercel.app",
+    github: "https://github.com/isagarbhardwaj/daily-news",
   },
 ];
 
